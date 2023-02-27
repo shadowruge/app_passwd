@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+#container{
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.variant{
+    width: 100px;
+    margin-left: 15px;
+}
+
+#senha{    
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    list-style-type: none;
+
+}
+label{
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.btn{
+    margin-left: 15px;
+}
