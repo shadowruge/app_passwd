@@ -2,36 +2,49 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+   
+}
+body{
+  
+    /* fallback for old browsers */
+    background: #a18cd1;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(161,140,209,1), rgba(251,194,235,1));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(161,140,209,1), rgba(251,194,235,1))
+  
 }
 
 
 #container{
-    background: green;
+    
+    font-family: 'Supermercado One';font-size: 22px;
+    color:white;
+    background-color:rgba(30, 30, 30,0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-}
+    margin:0 auto;
+    width: 80%;
+    height: 70%;
+    border-radius: 10px;
 
-.variant{
-    width: 100px;
-    margin-left: 15px;
-}
-
-#senha{    
-    margin-left: 50%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    list-style-type: none;
 
 }
-label{
-    color: white;
-    margin-right: 15px;
-    margin-left: 15px;
+input{
+    border-radius: 5px;
+    border:0px solid;
 }
-.btn{
-    margin-left: 15px;
+
+td{
+    align-content: center;
+    padding: 5px;
+   
 }
+table{
+    border-spacing: 30px;
+}
+
