@@ -8,18 +8,33 @@
     <link rel="stylesheet" href="css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href='https://fonts.googleapis.com/css?family=Supermercado One' rel='stylesheet'>
 
-    <title>Encurta sua url</title>
+    <title>Gerador de senhas</title>
 </head>
 <body>
-    <div id="container">
-        <label for="">Inicia com quatro caracteres aleatorios</label>
-        <input type="text" class="text" id="gerar" placeholder="Coloque aqui um inicio para sua senha">
-        <button type="btn" class="btn btn-primary" onclick="gerasenha()">Gerar senha</button>
-        <label for="">Quantidade de caracteres aleatorios</label>
-        <input type="number" class="variant" id="variant" value="4" />
+
+    <div id="container" class="mt-4">
+        <table>
+            <tr>
+                <td> <label for="checkbox">Marque aqui se deseja personalizar o inicio da senha</label></td>
+                <td><input type="checkbox" id="prefix" onclick="mycheckbox()"></td>
+            </tr>
+            <tr>
+                <td> <label for="">Inicia com quatro caracteres aleatorios</label></td>
+                <td><input type="text" class="text" id="gerar" placeholder="Caracteres Iniciais" disabled></td>
+            </tr>
+            <tr>
+                <td><label for="">Quantidade de caracteres aleatorios</label></td>
+                <td><input type="number" class="variant" id="variant" value="8" /></td>
+            </tr>
+            <tr><td colspan="2" class="text-center"><button type="button" class="btn-sm btn-outline-primary" onclick="gerasenha()">Gerar senha</button></td></tr>
+            <tr><td colspan="2" class="text-center"> <div id="senha"></div></td></tr>
+        </table>
+
     </div>
-    <div id="senha"></div>
+
+   
    <script src="main.js">
     
    </script> 
